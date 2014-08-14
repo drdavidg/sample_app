@@ -46,10 +46,12 @@
 <input class="button" type="button" value="Show participants!" id="showParticipants" 
     style="visibility:hidden;"
     onClick="showParticipants()"/>
+</p>
 
+<p>
 <input class="button" type="button" value="Silence all participant speakers!" id="deafParticipants"
     onClick="deafParticipants()"/>
-</p>
+ </p>
  
 <div id="participantsDiv"></div>
  
