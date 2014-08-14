@@ -92,8 +92,9 @@ function deafParticipants() {
     if (!participant.person) {
       retVal += '<li>A participant not running this app</li>';
     }
-    retVal += '<li>' + participant.person.displayName + participant.person.id + '</li>';
-
+        var currParticipant = participant.person.id;
+    retVal += '<li>' + participant.person.displayName + currParticipant + '</li>';
+   // gapi.hangout.av.setParticipantAudioLevel
   }
  
   retVal += '</ul>';
