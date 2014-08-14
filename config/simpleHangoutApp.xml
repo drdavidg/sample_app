@@ -96,7 +96,7 @@ function deafParticipants() {
         var audioStatus = gapi.hangout.av.getParticipantAudioLevel(currParticipant);
     retVal += '<li>' + participant.person.displayName + '  </li>';
     retVal += '<li>Audio Status:' + audioStatus + '</li>';
-    retVal += '<li>' + gapi.hangout.av.getParticipantAudioLevel(currParticipant) + '</li>';
+    //retVal += '<li>' + gapi.hangout.av.getParticipantAudioLevel(currParticipant) + '</li>';
    //gapi.hangout.av.setParticipantAudioLevel(currParticipant, 0);
   }
  
