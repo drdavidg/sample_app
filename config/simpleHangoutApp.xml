@@ -92,8 +92,8 @@ function deafParticipants() {
     if (!participant.person) {
       retVal += '<li>A participant not running this app</li>';
     }
-    retVal += '<li>' + participant.person.displayName + '</li>';
-    participant.
+    retVal += '<li>' + participant.person.displayName + participant.person.id + '</li>';
+
   }
  
   retVal += '</ul>';
