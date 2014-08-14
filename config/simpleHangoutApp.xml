@@ -46,6 +46,10 @@
 <input class="button" type="button" value="Show participants!" id="showParticipants" 
     style="visibility:hidden;"
     onClick="showParticipants()"/>
+
+<input class="button" type="button" value="Silence all participant speakers!" id="deafParticipants" 
+    style="visibility:hidden;"
+    onClick="deafParticipants()"/>
 </p>
  
 <div id="participantsDiv"></div>
@@ -74,6 +78,11 @@ function showParticipants() {
   var div = document.getElementById('participantsDiv');
  
   div.innerHTML = retVal;
+}
+
+function deafParticipants() {
+
+
 }
  
 function init() {
