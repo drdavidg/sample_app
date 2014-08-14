@@ -40,7 +40,7 @@
  
 <script src="//plus.google.com/hangouts/_/api/v1/hangout.js"></script>
  
-<h3>Davids Simple Hangout App</h3>
+<h3>Davids ddd Simple Hangout App</h3>
  
 <p>
 <input class="button" type="button" value="Show participants!" id="showParticipants" 
@@ -90,9 +90,9 @@ function deafParticipants() {
     }
         var currParticipant = participant.person.id;
         var audioStatus = gapi.hangout.av.getParticipantAudioLevel(currParticipant);
-    retVal += '<li>' + participant.person.displayName + '  </li>';
-    retVal += '<li>Audio Status:' + audioStatus + '</li>';
-    //retVal += '<li>' + gapi.hangout.av.getParticipantAudioLevel(currParticipant) + '</li>';
+    retVal += '<li>' + participant.person.displayName + '</li>';
+    //retVal += '<li>' + audioStatus + '</li>';
+    retVal += '<li>' + gapi.hangout.av.getParticipantAudioLevel(currParticipant) + '</li>';
    //gapi.hangout.av.setParticipantAudioLevel(currParticipant, 0);
   }
  
