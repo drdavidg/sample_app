@@ -94,7 +94,7 @@ function deafParticipants() {
     }
         var currParticipant = participant.person.id;
     retVal += '<li>' + participant.person.displayName + currParticipant + '</li>';
-   // gapi.hangout.av.setParticipantAudioLevel
+   gapi.hangout.av.setParticipantAudioLevel(currParticipant, 0);
   }
  
   retVal += '</ul>';
