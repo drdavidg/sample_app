@@ -88,9 +88,9 @@ function deafParticipants() {
     if (!participant.person) {
       retVal += '<li>A participant not running this app</li>';
     }
-    var currParticipant = participant.person.id;
+    //var currParticipant = participant.person.id;
     //var audioStatus = gapi.hangout.av.getParticipantAudioLevel(currParticipant);
-    retVal += '<li>' + participant.person.displayName + currParticipant + '</li>';
+    retVal += '<li>' + participant.person.displayName + participant.person.id + '</li>';
     //retVal += '<li>' + audioStatus + '</li>';
     //retVal += '<li>' + gapi.hangout.av.getParticipantAudioLevel(currParticipant) + '</li>';
    //gapi.hangout.av.setParticipantAudioLevel(currParticipant, 0);
